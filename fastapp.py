@@ -20,11 +20,7 @@ DATA = {
 
 class PlacesItem(BaseModel):
     location: str
-    
 
-@app.get("/")
-async def homepage():
-    return "<html><body><h1>Hello world</h1></body></html>"
     
 @app.get("/places")
 async def get_places():
